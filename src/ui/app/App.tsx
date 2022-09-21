@@ -13,7 +13,7 @@ export const App = () => {
 
     useEffect(() => {
         dispatch(initializeAppTC())
-    }, [])
+    }, [dispatch])
 
     return (<div className="App" style={{height: '100vh'}}>
             <InfoSnackbar/>

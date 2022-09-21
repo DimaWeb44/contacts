@@ -45,7 +45,7 @@ export const CustomSearch = () => {
         if (!firstRender) {
             dispatch(setSearchNameAC(debouncedSearchTerm as string))
         }
-    }, [debouncedSearchTerm])
+    }, [debouncedSearchTerm, dispatch])
 
     return <Grid>
         <Search>

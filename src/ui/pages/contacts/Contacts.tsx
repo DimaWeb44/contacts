@@ -26,7 +26,7 @@ export const Contacts = () => {
 
     useEffect(() => {
         dispatch(getContactsTC())
-    }, [search])
+    }, [search, dispatch])
 
     if (!isLoggedIn) {
         return <Navigate to={PATH.LOGIN}/>
