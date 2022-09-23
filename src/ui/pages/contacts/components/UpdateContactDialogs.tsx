@@ -41,7 +41,7 @@ export function UpdateContactDialogs() {
                                     name: values.title,
                                     number: values.number
                                 }),
-                                cover))
+                                cover ? cover : contacts.contactCover))
                             actions.setSubmitting(false)
                             actions.resetForm()
                             setCover('')
